@@ -36,10 +36,23 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
+# Python Build / Temporary Files
+build/
+*.pyo
+*.pyc
+*.tmp
+*.bak
+*.swp
+
 # Virtual Environments
 venv/
 .venv/
 env/
+
+# ==================================
+# Jupyter Notebook
+# ==================================
+.ipynb_checkpoints/
 
 # ==================================
 # SQLite Database
@@ -62,15 +75,16 @@ env/
 .vscode/*
 !.vscode/extensions.json
 .idea/
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
 # ==================================
 # Operating System
 # ==================================
+.DS_Store
 Thumbs.db
 desktop.ini
+
+# ==================================
+# Claude Project Memory
+# ==================================
+# Intentionally do not ignore .claude/
+# so project memory Markdown files can be committed.
