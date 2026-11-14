@@ -1,0 +1,109 @@
+{
+  "classes": [
+    "DoS",
+    "Normal",
+    "Probe",
+    "R2L",
+    "U2R"
+  ],
+  "multiclass": {
+    "accuracy": 0.8273598296664301,
+    "macro_f1": 0.6466922178058776,
+    "per_class": {
+      "DoS": {
+        "precision": 0.9534644744568409,
+        "recall": 0.8706434316353887,
+        "f1-score": 0.9101737668161435,
+        "support": 7460.0
+      },
+      "Normal": {
+        "precision": 0.8324492408999451,
+        "recall": 0.9372876119864072,
+        "f1-score": 0.8817631387745217,
+        "support": 9711.0
+      },
+      "Probe": {
+        "precision": 0.5737790545834421,
+        "recall": 0.9074762494836844,
+        "f1-score": 0.70304,
+        "support": 2421.0
+      },
+      "R2L": {
+        "precision": 0.91,
+        "recall": 0.2976017441860465,
+        "f1-score": 0.4485213581599124,
+        "support": 2752.0
+      },
+      "U2R": {
+        "precision": 0.5652173913043478,
+        "recall": 0.195,
+        "f1-score": 0.2899628252788104,
+        "support": 200.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        6495,
+        325,
+        640,
+        0,
+        0
+      ],
+      [
+        102,
+        9102,
+        439,
+        59,
+        9
+      ],
+      [
+        210,
+        8,
+        2197,
+        4,
+        2
+      ],
+      [
+        4,
+        1469,
+        441,
+        819,
+        19
+      ],
+      [
+        1,
+        30,
+        112,
+        18,
+        39
+      ]
+    ]
+  },
+  "binary": {
+    "labels": [
+      "Normal",
+      "Attack"
+    ],
+    "accuracy": 0.8917228530872959,
+    "roc_auc": 0.9609896226135985,
+    "confusion_matrix": [
+      [
+        9102,
+        609
+      ],
+      [
+        1832,
+        11001
+      ]
+    ]
+  },
+  "calibration": {
+    "temperature": 4.063503007348509,
+    "low_confidence_threshold": 0.6,
+    "low_confidence_share": 0.2138484740951029
+  },
+  "dataset": {
+    "train_rows": 125973,
+    "test_rows": 22544
+  }
+}

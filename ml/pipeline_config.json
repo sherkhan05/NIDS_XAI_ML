@@ -1,0 +1,12 @@
+{
+  "binary_threshold": 0.02,
+  "temperature": 4.063503007348509,
+  "low_confidence_threshold": 0.6,
+  "class_order": [
+    "DoS",
+    "Normal",
+    "Probe",
+    "R2L",
+    "U2R"
+  ]
+}
